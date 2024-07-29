@@ -1,0 +1,18 @@
+[tool.black]
+line-length = 88  # Default line length for Black
+skip-string-normalization = true  # Retain single or double quotes as is
+target-version = ['py37', 'py38', 'py39', 'py310']  # Specify target Python versions
+include = '\.pyi?$'
+exclude = '''
+/(
+  \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
